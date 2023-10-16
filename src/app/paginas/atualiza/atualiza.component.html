@@ -1,0 +1,53 @@
+<div class="container mt-5">
+    <h1 class="text-center mt-5">Cadastro</h1>
+    <form #form="ngForm" (ngSubmit)="atualizar(form)">
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" name="nome" [ngModel]="cliente.nome">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" name="sobrenome" [ngModel]="cliente.sobrenome">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <input type="text" class="form-control" name="cpf" [ngModel]="cliente.cpf">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" name="idade" [ngModel]="cliente.idade">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <input type="text" class="form-control"name="logradouro" [ngModel]="cliente.logradouro">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <input type="text" class="form-control" name="numero" [ngModel]="cliente.numero">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" name="complemento" [ngModel]="cliente.complemento">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" name="bairro" [ngModel]="cliente.bairro">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <input type="text" class="form-control" name="cidade" [ngModel]="cliente.cidade">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" name="estado" [ngModel]="cliente.estado"> 
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" name="cep" [ngModel]="cliente.cep">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <button class="btn btn-dark" type="submit">{{ nameButton }}</button>
+            </div>
+        </div>
+    </form>
+</div>

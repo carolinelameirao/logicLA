@@ -1,0 +1,53 @@
+<div class="container mt-5">
+    <h1 class="text-center mt-5">Cadastro</h1>
+    <form [formGroup]="form" class="row g-3 mt-5" (submit)="cadastrar()">
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Nome" formControlName="nome">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Sobrenome" formControlName="sobrenome">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="CPF" formControlName="cpf">
+            </div>
+            <div class="col">
+                <input type="number" class="form-control" placeholder="Idade" formControlName="idade">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Logradouro" formControlName="logradouro">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <input type="number" class="form-control" placeholder="Número" formControlName="numero">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Complemento" formControlName="complemento">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Bairro" formControlName="bairro">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Cidade" formControlName="cidade">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Estado" formControlName="estado"> 
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="CEP" formControlName="cep">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <button class="btn btn-dark" type="submit">{{ nameButton }}</button>
+            </div>
+        </div>
+    </form>
+</div>
